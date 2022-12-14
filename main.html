@@ -7,18 +7,39 @@
     </head>
    
     <body>
-        <body class="h-screen bg-slate-400 flex items-center justify-center">
+        <body class="h-screen bg-slate-400 flex grid items-center justify-center p-5">
             
- <!--Main section will include radial percentag boxes for liquids used in the fish tank -->
- <div class="flex items-center justify-center">
-    <div class="radial-progress" style="--value:46;">46%</div>
-    <p>Water Health</p>
-    <div class="radial-progress" style="--value:73;">73%</div>
-    <p>Supplys</p>
-    <div class="radial-progress" style="--value:60;">60%</div>
-    <p>Food container</p>
+                   <!--Notification bar on top of radial cirlces-->
+            <div class="stack">
+                <div class="card shadow-md bg-primary text-primary-content">
+                  <div class="card-body">
+                    <h2 class="card-title">Time to Eat</h2> 
+                    <p>You have 1 unread messages. Tap here to see.</p>
+                  </div>
+                </div> 
+                <div class="card shadow bg-primary text-primary-content">
+                  <div class="card-body">
+                    <h2 class="card-title">Notification 2</h2> 
+                    <p>You have 3 unread messages. Tap here to see.</p>
+                  </div>
+                </div> 
+                <div class="card shadow-sm bg-primary text-primary-content">
+                  <div class="card-body">
+                    <h2 class="card-title">Notification 3</h2> 
+                    <p>You have 3 unread messages. Tap here to see.</p>
+                  </div>
+                </div>
+              </div>
 
-</div>
+             <!--Main section will include radial percentag boxes for liquids used in the fish tank -->
+            <div class="flex items-center justify-center">
+                <div class="radial-progress" style="--value:46;">46%</div>
+                <p>Water Health</p>
+                <div class="radial-progress" style="--value:73;">73%</div>
+                <p>Supplys</p>
+                <div class="radial-progress" style="--value:60;">60%</div>
+                <p>Food container</p>
+            </div>
             
          
     </body>
