@@ -10,19 +10,49 @@
     <body>
         <body class="h-screen bg-slate-400">
                                                         <!--supply page-->
-        <div class="grid">
-            <div class="radial-progress" style="--value:46;">46%</div>
-                    <p>Water Health</p>
-                    <div class="radial-progress" style="--value:73;">73%</div>
-                     <p>Supplys</p>
-                     <div class="radial-progress" style="--value:60;">60%</div>
-                     <p>Food container</p>
-                     <p>Water Health</p>
-                    <div class="radial-progress" style="--value:73;">73%</div>
-                     <p>Supplys</p>
-                     <div class="radial-progress" style="--value:60;">60%</div>
-                     <p>Food container</p>
-            </div>
+        <div class="overflow-x-auto">
+            <table class="table w-full">
+                  <!-- head -->
+             <thead>
+                <tr>
+                <th></th>
+                <th>Product</th>
+                <th>Used for</th>
+                <th>Amount left</th>
+                </tr>
+                </thead>
+                <tbody>
+                                                         <!-- row 1 -->
+                <tr>
+                <th>1</th>
+                <td>Water Conditioner</td>
+                <td>Water Care</td>
+                <td>2 bottles</td>
+                </tr>
+                                                          <!-- row 2 -->
+                <tr class="hover">
+                <th>2</th>
+                <td>Ammonia Neutralizer</td>
+                <td>Water Care</td>
+                <td>1 bottle</td>
+                </tr>
+                                                         <!-- row 3 -->
+                 <tr>
+                 <th>3</th>
+                <td>Leafy Green liquid co2</td>
+                <td>Fresh water Plants</td>
+                <td class="text-red-600">0 (Restock needed)</td>
+                </tr>
+                                                        <!--row 4-->
+                <tr>
+                <th>4</th>
+                <td>Betta Beads</td>
+                <td>biodegradbel gravel</td>
+                <td class="text-amber-300"> 2 (Running low)</td>
+                </tr>
+
+                </tbody>
+            </table>
         </div>
 
 
