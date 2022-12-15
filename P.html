@@ -9,30 +9,63 @@
     <body>
         <body class="h-screen bg-slate-400">
                                              <!--Profile page outline-->
+    <div class="justify-items-end h-10 w-15 p-10">
         <div class="avatar">
         <div class="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
         <img src="https://placeimg.com/80/80/nature"/>
         </div>
      </div>
-                                            <!--Online status menu-->
-  <select class="flex select select-ghost w-min max-w-xs">
-    <option disabled selected>Set Online Status</option>
-    <option>Online</option>
-    <option>Offline</option>
-    <option>Do not disturb</option>
-  </select>
-                                <!--Mid screen box area for additional info--> 
-<div class="flex items-center justify-center">
-     <div class="card w-96 bg-base-100 shadow-xl image-full">
-            <figure><img src="https://placeimg.com/400/225/animals" alt="animals" /></figure>
-            <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions justify-end">
-            <button class="btn btn-primary">Buy Now</button>
-        </div>
     </div>
- </div>                               
+     
+                                        <!--Online status menu-->
+    <div class="grid justify-items-end p-10">
+        <select class="select select-ghost w-full max-w-xs">
+            <option disabled selected>Set online status</option>
+            <option>Online</option>
+            <option>Offline</option>
+            <option>Do not disturb</option>
+          </select>
+    </div>
+                                <!--Mid screen box area for additional info--> 
+    <div class="rounded-box shadow-xl p-4 m-4">                             
+        <h2 class="text-2xl">Profile</h2>
+        <div class="grid grid-cols-2 gap-4">
+
+            <div class="w-10/12"> 
+                <label class="label"></label>
+                <label class="input-group">
+                <span>Name</span>
+                <input type="text" placeholder="Place here" class="input input-bordered min-w-full" />
+                </label>
+            </div>
+                                                <!--Email box-->
+            <div class="w-10/12">                                      
+                <label class="label"></label>
+                <label class="input-group">
+                <span>Email</span>
+                <input type="text" placeholder="info@site.com" class="input input-bordered min-w-full " />
+                </label>
+            </div>
+                                        <!--Phone number box-->
+            <div class="w-10/12">                              
+                <label class="label"></label>
+                <label class="input-group">
+                <span>Phone #</span>
+                <input type="text" placeholder="123-356-9876" class="input input-bordered min-w-full" />
+                </label>
+            </div>                                       <!--Location-->
+            <div class="w-10/12"> 
+                <label class="label"></label>
+                <label class="input-group">
+                <span>Location</span>
+                <input type="text" placeholder="MA,LA,NY,PA etc..." class="input input-bordered min-w-full" />
+                </label>
+            </div>
+        </div>
+        <div class="grid w-full m-4">
+            <button class="place-self-end text-white hover:bg-blue-600 bg-blue-400 rounded-box p-4">Submit</button>
+        </div>
+    </div>       
          
     </body>
 </html>
