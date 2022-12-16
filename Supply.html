@@ -1,64 +1,139 @@
-
 <!DOCTYPE html>
 <html>
-    <head>
-        <link href="https://cdn.jsdelivr.net/npm/daisyui@2.43.2/dist/full.css" rel="stylesheet" type="text/css" />
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script src="app.js"></script>
-    </head>
-   
-    <body>
-        <body class="h-screen bg-slate-400">
-                                                        <!--supply page-->
-        <div class="overflow-x-auto">
-            <table class="table w-full">
-                  <!-- head -->
-             <thead>
-                <tr>
-                <th></th>
-                <th>Product</th>
-                <th>Used for</th>
-                <th>Amount left</th>
-                </tr>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.43.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="app.js"></script>
+</head>
+
+<body>
+
+    <body class="h-screen bg-slate-400">
+                                        <!--Supply Table outline-->
+            <div class="rounded-box shadow-xl p-10 m-6 bg-gray-400">
+            <table id="example" class="display" style="width:100%">
+                <thead>
+                        <tr>
+                            <th class="text-white">Product</th>
+                            <th class="text-white">Used for</th>
+                            <th class="text-white">Amount Left</th>
+                            <th class="text-white">located at</th>
+                        </tr>
                 </thead>
                 <tbody>
-                                                         <!-- row 1 -->
+                    <tr>
+                        <td class="text-white">Water Conditioner</td>
+                        <td><input class="rounded-lg" type="text" id="row-1-age" name="row-1-age" value="Water Care"></td>
+                        <td><input class="rounded-lg" type="text" id="row-1-position" name="row-1-position" placeholder="0"></td>
+                        <td><select class="rounded-lg" size="1" id="row-1-office" name="row-1-office">
+                            <option value="Edinburgh" selected="selected">
+                                Target
+                            </option>
+                            <option value="London">
+                                Walmart
+                            </option>
+                            <option value="New York">
+                                Costco
+                            </option>
+                            <option value="San Francisco">
+                                Bj's
+                            </option>
+                            <option value="Tokyo">
+                                Wegmans
+                            </option>
+                        </select></td>
+                    </tr>
                 <tr>
-                <th>1</th>
-                <td>Water Conditioner</td>
-                <td>Water Care</td>
-                <td>2 bottles</td>
+                    <td class="text-white">Ammonia Neutralizer</td>
+                    <td><input class="rounded-lg" type="text" id="row-2-age" name="row-2-age" value="Water Care"></td>
+                    <td><input class="rounded-lg" type="text" id="row-2-position" name="row-2-position" placeholder="0"></td>
+                    <td><select class="rounded-lg" size="1" id="row-2-office" name="row-2-office">
+                        <option value="Edinburgh" selected="selected">
+                            Target
+                        </option>
+                        <option value="London">
+                            Walmart
+                        </option>
+                        <option value="New York">
+                            Costco
+                        </option>
+                        <option value="San Francisco">
+                            Bj's
+                        </option>
+                        <option value="Tokyo">
+                            Wegmans
+                        </option>
+                    </select></td>
                 </tr>
-                                                          <!-- row 2 -->
-                <tr class="hover">
-                <th>2</th>
-                <td>Ammonia Neutralizer</td>
-                <td>Water Care</td>
-                <td>1 bottle</td>
+                <tr>
+                    <td class="text-white">Leafy Green liquid co2</td>
+                    <td><input class="rounded-lg" type="text" id="row-3-age" name="row-3-age" value="C02"></td>
+                    <td><input class="rounded-lg" type="text" id="row-3-position" name="row-3-position" placeholder="0">
+                    </td>
+                    <td><select class="rounded-lg" size="1" id="row-3-office" name="row-3-office">
+                        <option value="Edinburgh" selected="selected">
+                            Target
+                        </option>
+                        <option value="London">
+                            Walmart
+                        </option>
+                        <option value="New York">
+                            Costco
+                        </option>
+                        <option value="San Francisco">
+                            Bj's
+                        </option>
+                        <option value="Tokyo">
+                            Wegmans
+                        </option>
+                    </select></td>
                 </tr>
-                                                         <!-- row 3 -->
-                 <tr>
-                 <th>3</th>
-                <td>Leafy Green liquid co2</td>
-                <td>Fresh water Plants</td>
-                <td class="text-red-600">0 (Restock needed)</td>
-                </tr>
-                                                        <!--row 4-->
-                <tr class="hover">
-                <th>4</th>
-                <td>Betta Beads</td>
-                <td>biodegradabel gravel</td>
-                <td class="text-amber-300"> 2 (Running low)</td>
-                </tr>
-
-                </tbody>
-            </table>
-        </div>
-
-
-
-
-
-    </body>
-</html>
+                <tr>
+                    <td class="text-white">Beta Beads</td>
+                    <td><input class="rounded-lg" type="text" id="row-3-age" name="row-3-age" value="Biodegradabel gravel"></td>
+                    <td><input class="rounded-lg" type="text" id="row-3-position" name="row-3-position" placeholder="0">
+                    </td>
+                    <td><select class="rounded-lg" size="1" id="row-3-office" name="row-3-office">
+                        <option value="Edinburgh" selected="selected">
+                            Target
+                        </option>
+                        <option value="London">
+                            Walmart
+                        </option>
+                        <option value="New York">
+                            Costco
+                        </option>
+                        <option value="San Francisco">
+                            Bj's
+                        </option>
+                        <option value="Tokyo">
+                            Wegmans
+                    </select></td>
                 
+                 </tr>
+                        <tr>
+                            <td class="text-white">Fish food</td>
+                            <td><input class="rounded-lg" type="text" id="row-3-age" name="row-3-age" value="Food"></td>
+                            <td><input class="rounded-lg" type="text" id="row-3-position" name="row-3-position" placeholder="0">
+                            </td>
+                            <td><select class="rounded-lg" size="1" id="row-3-office" name="row-3-office">
+                                <option value="Edinburgh" selected="selected">
+                                    Target
+                                </option>
+                                <option value="London">
+                                    Walmart
+                                </option>
+                                <option value="New York">
+                                    Costco
+                                </option>
+                                <option value="San Francisco">
+                                    Bj's
+                                </option>
+                                <option value="Tokyo">
+                                    Wegmans
+                            </select>
+                        </tr>
+                    </div>
+            </tbody>
+        </body>
+    </html>    
