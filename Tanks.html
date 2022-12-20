@@ -49,32 +49,203 @@
 
 
 
-        <!--Tanks with fish types in description-->
+                                         <!--Tanks with fish types in description-->
         <div class="grid grid-cols-4 gap-3 content-center p-20">
             <div>
                 <img src="https://static.thenounproject.com/png/2378347-200.png">
-                <a href="chart.html" >Tank 1 Ph level</button>
-                <h1>Good/Main. Needed</h1>
-                <input type="checkbox" class="toggle" checked>
-                </a>
-            </div>
-            <div>
-                <img src="https://static.thenounproject.com/png/139659-200.png">
-                <a href="chart.html" >Tank 2 Ph level</button>
+                <div class="dropdown">
+                    <label tabindex="0" class="btn m-1">Ph level</label>
+                    <div tabindex="0" class="dropdown-content card card-compact w-64 p-2 shadow bg-primary text-primary-content">
+                        <div class="card-body">
+                        <canvas id="myChart1" style="width:100%;max-width:700px"></canvas>
+                            <script>
+                            var xyValues = [
+                            {x:50, y:7},
+                            {x:60, y:8},
+                            {x:70, y:8},
+                            {x:80, y:9},
+                            {x:90, y:9},
+                            {x:100, y:9},
+                            {x:110, y:10},
+                            {x:120, y:11},
+                            {x:130, y:14},
+                            {x:140, y:14},
+                            {x:150, y:15}
+                            ];
+
+                            new Chart("myChart1", {
+                            type: "scatter",
+                            data: {
+                                datasets: [{
+                                pointRadius: 4,
+                                pointBackgroundColor: "rgb(0,0,255)",
+                                data: xyValues
+                                }]
+                            },
+                            options: {
+                                legend: {display: false},
+                                scales: {
+                                xAxes: [{ticks: {min: 40, max:160}}],
+                                yAxes: [{ticks: {min: 6, max:16}}],
+                                }
+                            }
+                            });
+                            </script>
+                        <a href="chart.html" >Ph level
+                        </div>
+                    </div>
+                    </div>
                 <h1>On/Off</h1>
                 <input type="checkbox" class="toggle" checked>
                 </a>
             </div>
+                                                <!--Tank 2-->
             <div>
                 <img src="https://static.thenounproject.com/png/4007146-200.png">
-                <a href="chart.html" >Tank 3 Ph level</button>
+                <div class="dropdown">
+                    <label tabindex="0" class="btn m-1">Ph level</label>
+                    <div tabindex="0" class="dropdown-content card card-compact w-64 p-2 shadow bg-primary text-primary-content">
+                        <div class="card-body">
+                        <canvas id="myChart2" style="width:100%;max-width:700px"></canvas>
+                            <script>
+                            var xyValues = [
+                            {x:50, y:7},
+                            {x:60, y:8},
+                            {x:70, y:8},
+                            {x:80, y:9},
+                            {x:90, y:9},
+                            {x:100, y:9},
+                            {x:110, y:10},
+                            {x:120, y:11},
+                            {x:130, y:14},
+                            {x:140, y:14},
+                            {x:150, y:15}
+                            ];
+
+                            new Chart("myChart2", {
+                            type: "scatter",
+                            data: {
+                                datasets: [{
+                                pointRadius: 4,
+                                pointBackgroundColor: "rgb(0,0,255)",
+                                data: xyValues
+                                }]
+                            },
+                            options: {
+                                legend: {display: false},
+                                scales: {
+                                xAxes: [{ticks: {min: 40, max:160}}],
+                                yAxes: [{ticks: {min: 6, max:16}}],
+                                }
+                            }
+                            });
+                            </script>
+                        <a href="chart.html" >Ph level
+                        </div>
+                    </div>
+                    </div>
                 <h1>On/Off</h1>
                 <input type="checkbox" class="toggle" checked>
                 </a>
             </div>
+
+
+                                                         <!--Tank 3-->
+            <div>
+                <img src="https://static.thenounproject.com/png/4007146-200.png">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn m-1">Ph level</label>
+                    <div tabindex="0" class="dropdown-content card card-compact w-64 p-2 shadow bg-primary text-primary-content">
+                      <div class="card-body">
+                        <canvas id="myChart3" style="width:100%;max-width:700px"></canvas>
+                            <script>
+                            var xyValues = [
+                            {x:50, y:7},
+                            {x:60, y:8},
+                            {x:70, y:8},
+                            {x:80, y:9},
+                            {x:90, y:9},
+                            {x:100, y:9},
+                            {x:110, y:10},
+                            {x:120, y:11},
+                            {x:130, y:14},
+                            {x:140, y:14},
+                            {x:150, y:15}
+                            ];
+
+                            new Chart("myChart3", {
+                            type: "scatter",
+                            data: {
+                                datasets: [{
+                                pointRadius: 4,
+                                pointBackgroundColor: "rgb(0,0,255)",
+                                data: xyValues
+                                }]
+                            },
+                            options: {
+                                legend: {display: false},
+                                scales: {
+                                xAxes: [{ticks: {min: 40, max:160}}],
+                                yAxes: [{ticks: {min: 6, max:16}}],
+                                }
+                            }
+                            });
+                            </script>
+                        <a href="chart.html" >Ph level
+                      </div>
+                    </div>
+                  </div>
+                <h1>On/Off</h1>
+                <input type="checkbox" class="toggle" checked>
+                </a>
+            </div>
+
+                                                        <!--Tank 4-->
             <div>
                 <img src="https://static.thenounproject.com/png/4895013-200.png">
-                <a href="chart.html" > Tank 4 Ph level</button>
+                <div class="dropdown">
+                    <label tabindex="0" class="btn m-1">Ph level</label>
+                    <div tabindex="0" class="dropdown-content card card-compact w-64 p-2 shadow bg-primary text-primary-content">
+                      <div class="card-body">
+                        <canvas id="myChart4" style="width:100%;max-width:700px"></canvas>
+
+                            <script>
+                            var xyValues = [
+                            {x:50, y:2},
+                            {x:60, y:4},
+                            {x:70, y:6},
+                            {x:80, y:8},
+                            {x:90, y:10},
+                            {x:100, y:12},
+                            {x:110, y:14},
+                            {x:120, y:16},
+                            {x:130, y:18},
+                            {x:140, y:14},
+                            {x:150, y:15}
+                            ];
+
+                            new Chart("myChart4", {
+                            type: "scatter",
+                            data: {
+                                datasets: [{
+                                pointRadius: 4,
+                                pointBackgroundColor: "rgb(0,0,255)",
+                                data: xyValues
+                                }]
+                            },
+                            options: {
+                                legend: {display: false},
+                                scales: {
+                                xAxes: [{ticks: {min: 40, max:100}}],
+                                yAxes: [{ticks: {min: 6, max:16}}],
+                                }
+                            }
+                            });
+                            </script>
+                        <a href="chart.html" >Ph level
+                      </div>
+                    </div>
+                  </div>
                 <h1>On/Off</h1>
                 <input type="checkbox" class="toggle" checked>
                 </a>
