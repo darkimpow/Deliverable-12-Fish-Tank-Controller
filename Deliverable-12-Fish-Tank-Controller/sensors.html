@@ -4,15 +4,12 @@
 <head>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.43.2/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <video autoplay loop muted class="absolute -z-50 w-auto min-w-full min-h-full max-w-none">
-        <source src="https://assets.mixkit.co/videos/preview/mixkit-clown-fish-in-the-reef-7255-large.mp4"
-          type="video/mp4" />Your browser does not support the video tag.
-      </video>
+    <script src="app.js"></script>
 </head>
 
     <body>
 
-        <body class="h-screen">
+        <body class="h-screen bg-slate-400">
                                        
           <!--Nav bar menu section-->
         <header class="navbar bg-neutral text-white">
@@ -49,42 +46,38 @@
             
                 
                                     <!--sensors for fish tanks-->
-            <div class="grid grid-rows-4 grid-flow-col gap-4 p-24 text-white">
-                <div class="radial-progress text-white" id="water" style="--value:46;">46%</div>
-                    <p class="text-white text-2xl">Water Health</p>
-                <div class="radial-progress" id="chlorine" style="--value:80;">80%</div>
-                    <p class="text-2xl">Chlorine</p>
-                <div class="radial-progress" id="ph" style="--value:30;">30%</div>
-                    <p class="text-2xl">Ph level</p>
-                <div class="radial-progress" id="gravel" style="--value:73;">73%</div>
-                    <p class="text-2xl">Gravel</p>
-                <div class="radial-progress" id="food" style="--value:60;">60%</div>
-                    <p class="text-2xl">Food container</p>
-                    <div class="radial-progress" id="ammonia" style="--value:56;">56%</div>
-                    <p class="text-2xl">Ammonia</p>
-                <div class="radial-progress" id="supply" style="--value:67;">67%</div>
-                    <p class="text-2xl">Supplys</p>
-                <div class="radial-progress" id="nitrate"style="--value:20;">20%</div>
-                    <p class="text-2xl">Nitrate</p>
-                <div class="radial-progress" id="phosphate"style="--value:50;">50%</div>
-                    <p class="text-2xl">Phosphate</p>
-                <div class="radial-progress" id="silicate" style="--value:60;">60%</div>
-                    <p class="text-2xl">Silicate</p>
-                    <div class="radial-progress" id="strong" style="--value:10;">10%</div>
-                    <p class="text-2xl">Stronitin</p>
-                <div class="radial-progress" id="reef" style="--value:40;">40%</div>
-                    <p class="text-2xl">Reef Health</p>
-                <div class="radial-progress" id="fro" style="--value:50;">50%</div>
-                    <p class="text-2xl">Ferrion</p>
-                <div class="radial-progress" id="dion" style="--value:60;">60%</div>
-                    <p class="text-2xl">Iodion</p>
+            <div class="grid grid-rows-4 grid-flow-col gap-4 p-24">
+                <div class="radial-progress" style="--value:46;">46%</div>
+                    <p>Water Health</p>
+                <div class="radial-progress" style="--value:80;">80%</div>
+                    <p>Chlorine</p>
+                <div class="radial-progress" style="--value:30;">30%</div>
+                    <p>Ph level</p>
+                <div class="radial-progress" style="--value:73;">73%</div>
+                    <p>Gravel</p>
+                <div class="radial-progress" style="--value:60;">60%</div>
+                    <p>Food container</p>
+                    <div class="radial-progress" style="--value:56;">56%</div>
+                    <p>Ammonia</p>
+                <div class="radial-progress" style="--value:67;">67%</div>
+                    <p>Supplys</p>
+                <div class="radial-progress" style="--value:20;">20%</div>
+                    <p>Nitrate</p>
+                <div class="radial-progress" style="--value:50;">50%</div>
+                    <p>Phosphate</p>
+                <div class="radial-progress" style="--value:60;">60%</div>
+                    <p>Silicate</p>
+                    <div class="radial-progress" style="--value:10;">10%</div>
+                    <p>Stronitin</p>
+                <div class="radial-progress" style="--value:40;">40%</div>
+                    <p>Reef Health</p>
+                <div class="radial-progress" style="--value:50;">50%</div>
+                    <p>Ferrion</p>
+                <div class="radial-progress" style="--value:60;">60%</div>
+                    <p>Iodion</p>
             </div>
         </body>
-
-
-
-
-                                            <!--footer section with social media links -->
+          <!--footer section with social media links -->
   <footer class="footer items-center p-4 bg-neutral text-neutral-content fixed bottom-0 w-full">
     <div class="items-center grid-flow-col">
       <svg width="36" height="36" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
@@ -114,7 +107,5 @@
         </svg></a>
     </div>
   </footer>
-            <!--Link for Java Script added here-->
-  <script src="app.js"> </script>
     </body>
 </html>

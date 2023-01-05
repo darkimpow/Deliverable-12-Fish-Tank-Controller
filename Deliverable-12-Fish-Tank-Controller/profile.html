@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.43.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <!--Nav bar menu section-->
+    <header class="navbar bg-neutral text-white">
+        <div class="flex-1">
+            <a href="main.html" class="btn btn-ghost normal-case text-3xl">Aquarium</a>
+        </div>
+        <div class="flex-none gap-2">
+            <div class="form-control">
+                <input type="text" placeholder="Search" class="input input-bordered text-black" />
+            </div>
+            <div class="dropdown dropdown-end">
+                <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                    <div class="w-10 rounded-full">
+                        <img src="https://placeimg.com/80/80/animals" />
+                    </div>
+                </label>
+                <ul tabindex="0"
+                    class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
+                    <li>
+                        <a class="justify-between text-black">
+                            Profile
+                            <span class="badge">New</span>
+                        </a>
+                    </li>
+                    <li><a class="text-black">Settings</a></li>
+                    <li>
+                        <a= class="text-black">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <body class="h-screen bg-slate-400">
+        <!--Profile page outline-->
+        <div class="justify-items-end h-10 w-15 p-10">
+            <div class="avatar">
+                <div class="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                    <img src="https://placeimg.com/80/80/nature" />
+                </div>
+            </div>
+        </div>
+
+        <!--Online status menu-->
+        <div class="grid justify-items-end p-10">
+            <select class="select select-ghost w-full max-w-xs">
+                <option disabled selected>Set online status</option>
+                <option>Online</option>
+                <option>Offline</option>
+                <option>Do not disturb</option>
+            </select>
+        </div>
+        <!--Mid screen box area for additional info-->
+        <div class="rounded-box shadow-xl p-4 m-4">
+            <h2 class="text-2xl text-white">Profile</h2>
+            <div class="grid grid-cols-2 gap-4">
+
+                <div class="w-10/12">
+                    <label class="label"></label>
+                    <label class="input-group">
+                        <span>Name</span>
+                        <input type="text" placeholder="Place here" class="input input-bordered min-w-full" />
+                    </label>
+                </div>
+                <!--Email box-->
+                <div class="w-10/12">
+                    <label class="label"></label>
+                    <label class="input-group">
+                        <span>Email</span>
+                        <input type="text" placeholder="info@site.com" class="input input-bordered min-w-full " />
+                    </label>
+                </div>
+                <!--Phone number box-->
+                <div class="w-10/12">
+                    <label class="label"></label>
+                    <label class="input-group">
+                        <span>Phone #</span>
+                        <input type="text" placeholder="123-356-9876" class="input input-bordered min-w-full" />
+                    </label>
+                </div> <!--Location-->
+                <div class="w-10/12">
+                    <label class="label"></label>
+                    <label class="input-group">
+                        <span>Location</span>
+                        <input type="text" placeholder="MA,LA,NY,PA etc..." class="input input-bordered min-w-full" />
+                    </label>
+                </div>
+            </div>
+            <div class="grid w-full m-4">
+                <button class="place-self-end text-white hover:bg-blue-600 bg-green-700 rounded-box p-4">Submit</button>
+            </div>
+        </div>
+
+        <!--Password save/reset feild-->
+        <div class="bg-slate-400">
+        <div class="rounded-box shadow-xl p-4 m-4">
+            <h3 class="text-2xl text-white">Password</h3>
+            <div class="w-6/12">
+                <label class="label"></label>
+                <label class="input-group">
+                    <span>Password</span>
+                    <input type="text" placeholder="Place here" class="input input-bordered min-w-full" />
+                </label>
+            </div>
+            <!--Email box-->
+            <div class="w-6/12">
+                <label class="label"></label>
+                <label class="input-group">
+                    <span>Confirm</span>
+                    <input type="text" placeholder="Place here" class="input input-bordered min-w-full " />
+                </label>
+            </div>
+            <div class="grid w-full p-10">
+                <button class="place-self-end text-white hover:bg-blue-600 bg-green-700 rounded-box p-4">Save</button>
+            </div>
+        </div>
+        </div>
+      
+    </body>
+
+</html>
